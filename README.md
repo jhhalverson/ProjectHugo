@@ -12,4 +12,11 @@ We want to keep things as simple as possible.
 
     hugo new page.md
 
+## Markdown
+
+What $\alpha$
+
+$$\alpha$$
+
 ## Directory Structure
+
