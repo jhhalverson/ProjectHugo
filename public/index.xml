@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jim Halverson</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jim Halverson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jul 2015 15:51:20 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>idea3</title>
+      <link>http://localhost:1313/part3/</link>
+      <pubDate>Fri, 17 Jul 2015 15:51:20 -0700</pubDate>
+      
+      <guid>http://localhost:1313/part3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>idea2</title>
+      <link>http://localhost:1313/part2/</link>
+      <pubDate>Fri, 17 Jul 2015 15:51:17 -0700</pubDate>
+      
+      <guid>http://localhost:1313/part2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The First Part</title>
+      <link>http://localhost:1313/part1/</link>
+      <pubDate>Fri, 17 Jul 2015 15:51:14 -0700</pubDate>
+      
+      <guid>http://localhost:1313/part1/</guid>
+      <description>&lt;p&gt;In this file we have the first part of the project. You get the idea. Write something!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Project</title>
+      <link>http://localhost:1313/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/</guid>
+      <description>
+
+&lt;p&gt;This is the default front page the project. The idea
+is to use markdown and MathJax to organize a physics project
+in a way that is lightweight relative to $\LaTeX$. The
+layout below is the sort of organization scheme I like.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-project-idea:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;The Project Idea&lt;/h2&gt;
+
+&lt;p&gt;The overarching part of this project is to do some interesting physics.&lt;/p&gt;
+
+&lt;h2 id=&#34;components-of-the-project:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;Components of the Project&lt;/h2&gt;
+
+&lt;p&gt;The different parts of this project are quarantined in their own files, since that&amp;rsquo;s how projects
+typically break down anyways, and each part may lead down interesting tangents. I like to link
+to those different parts, though.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;part1&#34;&gt;Part One&lt;/a&gt;. Click here to see the first part. It&amp;rsquo;s really important for the project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;part2&#34;&gt;Part Two&lt;/a&gt;. This is the second part. It&amp;rsquo;s the meat, and has lots of calculations.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;part3&#34;&gt;Part Three&lt;/a&gt;. Part three wraps it up.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

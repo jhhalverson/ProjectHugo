@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/markdown.css" type="text/css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/pilcrow.css" type="text/css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/hljs-github.min.css" type="text/css">
+  </head>
+  <body>
+\(\newcommand{\cN}{\mathcal{N}}\) 
+\(\newcommand{\N}{\mathbb{N}}\) 
+\(\newcommand{\R}{\mathbb{R}}\) 
+\(\newcommand{\Z}{\mathbb{Z}}\)
+\(\newcommand{\P}{\mathbb{P}}\)
+
+    <h1 id="title">{{ range .Data.Pages }}
+	{{if eq .Type "index" }}
+        {{.Title}}
+        {{end}}
+	{{ end }}</h1>
+    <div>
+      <article id="content">
+	{{ range .Data.Pages }}
+	{{if eq .Type "index" }}
+        {{.Content}}
+        {{end}}
+	{{ end }}
+      </article>
+    </div>
+</body>
+</html>

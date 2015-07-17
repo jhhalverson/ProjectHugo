@@ -1,0 +1,5 @@
+baseurl = "."
+languageCode = "en-us"
+title = "Jim Halverson"
+builddrafts = true
+contentdir="parts"
