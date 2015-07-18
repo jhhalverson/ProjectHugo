@@ -2,11 +2,11 @@ Many research projects in the sciences use LaTeX, the well-known
 typesetting software. This is excellent for writing papers, but at
 earlier stages of projects it can feel like overkill.
 
-*ProjectHugo* is lightweight alternative that provides some of the
+*ProjectHugo* is a lightweight alternative that provides some of the
 same functionality as LaTeX, but is intended for use at earlier,
-organizational stages of projects.  It usese the static site generator
-Hugo to convert Markdown files to nicely formatted HTML and CSS,
-including LaTeX support via MathJax.
+organizational stages of projects.  It uses the static site generator
+[Hugo](http://gohugo.io) to convert Markdown files to nicely formatted
+HTML and CSS, including LaTeX support via MathJax.
 
 ## Getting Started
 
@@ -34,26 +34,27 @@ to start the Hugo server. Navigate to the website the it recommends
 (it likely has "localhost" in it) and get a feel for what's possible.
 We will henceforth call this url "theurl".
 
-Note that you can edit the .md files in parts and Hugo will (assuming
-that the server is still running with "--watch" enabled) reload the
-web browser in real time.
+Note that you can edit the .md files in the parts folder and Hugo will
+(assuming that the server is still running with "--watch" enabled)
+reload the web browser in automatically. If you use an editor that
+auto saves, this allows you to write in real time, equations and all.
 
 ## Using ProjectHugo
 
-Using ProjectHugo just like using Hugo. If you want a comprehensive
+Using ProjectHugo is just like using Hugo. If you want a comprehensive
 introduction, visit the [Hugo website](http://gohugo.io/). Here are
 the basics, though.
 
-First, you will write all of your content in the folder "parts" and
-its subfolders. Suppose you're working on a project that involves
-magnetic monopoles, and you wanted to collect your notes, thoughts,
-and calculations on magnetic monopoles in a particular file.  There
-are two basic ways in which you might want to proceed. If you expect
-this to be a simple part of your project, use
+First, you will write all of your ProjectHugo content in the folder
+"parts" and its subfolders. Suppose you're working on a project that
+involves magnetic monopoles, and you wanted to collect your notes,
+thoughts, and calculations on magnetic monopoles in a particular file.
+There are two basic ways in which you might want to proceed. If you
+expect this to be a simple part of your project, use
 
     hugo new monopoles.md
 
-whhich will create monopoles.md in your parts folder. Edit this file
+which will create monopoles.md in your parts folder. Edit this file
 in your favorite editor and, with the Hugo server running navigate
 to *theurl/monopoles/*. The page will be reloaded any time you
 save the source file monopoles.md.
@@ -74,7 +75,8 @@ or
 
     hugo new monopoles/thooft-polyakov.md
 
-for different types of monopoles that you might want to study.  I like
+for different types of monopoles that you might want to study. The
+first would appear at *theurl/monopoles/dirac/*, for example. I like
 this "extra subdirectory" approach because I often have other files
 (SAGE, Mathematica, etc) associated with a particular part of a
 project.
@@ -90,3 +92,9 @@ equations into proper equations on webpages. For an introduction to
 MathJax,
 [see here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference),
 for example.
+
+## Custom Commands
+
+Some custom LaTeX commands often used in the physics literature are
+implemented in ProjectHugo. For an up-to-date list, examine the source
+in *layouts/_default/single.html*.
